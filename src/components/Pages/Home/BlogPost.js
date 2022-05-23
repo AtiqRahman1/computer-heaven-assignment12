@@ -11,7 +11,7 @@ const BlogPost = () => {
                     <div>
                         <h1 class="text-5xl font-bold uppercase">Latest News From <br /> Our Blog!</h1>
                         <p class="py-6">The CPU is often called the "brain" of a computer, thanks to its direct plug connection to the motherboard,<br /> and communication with all of the computer's other components.</p>
-                        <button class="btn btn-emerald">View All Blog</button>
+                        <button class="btn btn-primary">View All Blog</button>
                     </div>
                 </div>
             </div>
