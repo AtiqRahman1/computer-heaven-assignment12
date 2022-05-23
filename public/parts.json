@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "CPU",
+        "img": "https://i.ibb.co/8N5xXZz/cpu.png",
+        "description": "The computer's central processing unit (CPU) is the portion of a computer that retrieves and executes instructions.",
+        "orderQuantity": "100",
+        "availableQuantity": "10045",
+        "price": "50"
+    },
+    {
+        "id": 2,
+        "name": "MotherBoard",
+        "img": "https://i.ibb.co/zHd6g7j/Motherboard.png",
+        "description": "The motherboard is the backbone that ties the computer's components together at one spot and allows them to talk to each other",
+        "orderQuantity": "100",
+        "availableQuantity": "1000",
+        "price": "200"
+    },
+    {
+        "id": 3,
+        "name": "Hard Drive",
+        "img": "https://i.ibb.co/L1NL2PX/hard-disk.png",
+        "description": "Hare drive is magnetic storage medium for a computer. Hard disks are flat circular plates made of aluminum or glass and coated with a magnetic material.",
+        "orderQuantity": "120",
+        "availableQuantity": "2000",
+        "price": "150"
+    },
+    {
+        "id": 4,
+        "name": "RAM",
+        "img": "https://i.ibb.co/090FgSL/RAM.jpg",
+        "description": "RAM is the super-fast and temporary data storage space that a computer needs to access right now or in the next few moments.",
+        "orderQuantity": "100",
+        "availableQuantity": "1020",
+        "price": "250"
+    }
+]
