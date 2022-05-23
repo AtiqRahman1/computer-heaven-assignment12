@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 const Parts = () => {
     const [parts, setParts] = useState([]);
+    const { partId } = useParams();
+
 
     useEffect(() => {
-        fetch('parts.json')
+        fetch('http://localhost:5000/part')
             .then(res => res.json())
             .then(data => setParts(data))
     }, [])
@@ -16,7 +18,8 @@ const Parts = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                 {
                     parts.map(part => <div
-                        key={part.id}
+                        key={part._id}
+                        part={part}
                         class="card lg:card-side bg-base-100 shadow-xl">
                         <figure><img className='w-80' src={part.img} alt="Album" /></figure>
                         <div class="card-body">
@@ -26,7 +29,8 @@ const Parts = () => {
                             <p>Available Quantity: {part.availableQuantity}</p>
                             <p>Price: ${part.price}</p>
                             <div class="card-actions justify-end">
-                                <Link to='/purchase'><button class="btn btn-primary">Purchase</button> </Link>
+                                <Link to={`/purchase/${partId}`}><button
+                                    class="btn btn-primary">Purchase</button> </Link>
                             </div>
                         </div>
                     </div>)
