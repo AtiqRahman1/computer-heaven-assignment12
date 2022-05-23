@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Taylor",
+        "message": "We bought their service recently and really are enjoying the ease of use.",
+        "ratings": "4.7"
+    },
+    {
+        "id": 2,
+        "name": "Dennis Schulist",
+        "message": "I am glad, I bought their product very fast. Love the processor and RAM.",
+        "ratings": "4.4"
+    },
+    {
+        "id": 3,
+        "name": "Karen Rick",
+        "message": "Great service, this is my third envy, would recommend.",
+        "ratings": "4.9"
+    }
+]
