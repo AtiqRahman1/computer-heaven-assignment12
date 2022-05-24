@@ -4,6 +4,7 @@ import Blogs from './components/Pages/Home/Blogs';
 import Home from './components/Pages/Home/Home';
 import Login from './components/Pages/Login/Login';
 import Register from './components/Pages/Login/Register';
+import MyPortfolio from './components/Pages/MyPortfolio/MyPortfolio';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Purchase from './components/Pages/Purchase/Purchase';
 import Navbar from './components/Shared/Navbar';
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<Purchase></Purchase>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
