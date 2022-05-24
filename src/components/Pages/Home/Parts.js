@@ -20,19 +20,19 @@ const Parts = () => {
                     parts.map(part => <div
                         key={part._id}
                         part={part}
-                        class="card lg:card-side bg-base-100 shadow-xl">
+                        className="card lg:card-side bg-base-100 shadow-xl">
                         <figure><img className='w-80' src={part.img} alt="Album" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">{part.name}</h2>
+                        <div className="card-body">
+                            <h2 className="card-title">{part.name}</h2>
                             <p>{part.description}</p>
                             <p>Minimum Order Quantity: {part.orderQuantity}</p>
                             <p>Available Quantity: {part.availableQuantity}</p>
                             <p>Price: ${part.price}</p>
-                            <div class="card-actions justify-end">
+                            <div className="card-actions justify-end">
                                 <button onClick={() => {
                                     navigate("/purchase", { state: { part: part } });
                                 }}
-                                    class="btn btn-primary">Purchase</button>
+                                    className="btn btn-primary">Purchase</button>
                             </div>
                         </div>
                     </div>)

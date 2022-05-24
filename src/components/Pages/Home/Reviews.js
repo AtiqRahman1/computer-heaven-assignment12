@@ -16,9 +16,9 @@ const Reviews = () => {
                 {
                     reviews.map(review => <div
                         key={review._id}
-                        class="card w-96 bg-purple-400 text-white shadow-xl">
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">{review.name}</h2>
+                        className="card w-96 bg-purple-400 text-white shadow-xl">
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title">{review.name}</h2>
                             <p>Feedback: {review.message}</p>
                             <p>Ratings: {review.ratings}</p>
                         </div>

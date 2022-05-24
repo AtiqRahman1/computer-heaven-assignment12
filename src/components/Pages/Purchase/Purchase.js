@@ -10,8 +10,8 @@ const Purchase = (props) => {
 
     return (
         <div>
-            <div class="overflow-x-auto mt-10">
-                <table class="table w-full">
+            <div className="overflow-x-auto mt-10">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
