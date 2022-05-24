@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const Parts = () => {
     const [parts, setParts] = useState([]);
-    const { partId } = useParams();
+    const navigate = useNavigate();
 
 
     useEffect(() => {
@@ -29,8 +29,10 @@ const Parts = () => {
                             <p>Available Quantity: {part.availableQuantity}</p>
                             <p>Price: ${part.price}</p>
                             <div class="card-actions justify-end">
-                                <Link to={`/purchase/${partId}`}><button
-                                    class="btn btn-primary">Purchase</button> </Link>
+                                <button onClick={() => {
+                                    navigate("/purchase", { state: { part: part } });
+                                }}
+                                    class="btn btn-primary">Purchase</button>
                             </div>
                         </div>
                     </div>)
