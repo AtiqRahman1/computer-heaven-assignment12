@@ -48,17 +48,6 @@ const Purchase = () => {
 
     return (
         <div>
-
-            {/* <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">{part.name}</h2>
-                    <p>{part.availableQuantity}</p>
-                    <p>{part.orderQuantity}</p>
-                    <p>{part.price}</p>
-
-                </div> */}
-            {/* </div> */}
-
             <div className="overflow-x-auto mt-10">
                 <table className="table w-full">
                     <thead>
