@@ -15,9 +15,10 @@ const Part = ({ part }) => {
                     <p>Available Quantity: {availableQuantity}</p>
                     <p>Price: ${price}</p>
                     <div className="card-actions justify-end">
-                        <button onClick={() => {
-                            navigate("/purchase", { state: { part: part } });
-                        }}
+                        <button
+                            onClick={() => {
+                                navigate("/purchase", { state: { part: part } });
+                            }}
                             className="btn btn-primary">Purchase</button>
                     </div>
                 </div>

@@ -9,7 +9,8 @@ const Purchase = () => {
     const { state } = useLocation();
     const { part } = state || {};
 
-    const [user, loading, error] = useAuthState(auth);
+
+    const [user] = useAuthState(auth);
 
     const handleOrders = event => {
         event.preventDefault();
