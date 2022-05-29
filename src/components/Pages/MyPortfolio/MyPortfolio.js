@@ -3,9 +3,9 @@ import React from 'react';
 const MyPortfolio = () => {
     return (
         <div className='justify-items-center'>
-            <div class="card text-center w-full bg-neutral text-primary-content">
-                <div class="card-body ">
-                    <h2 class="text-3xl">My Name: Atiqur Rahman</h2>
+            <div className="card text-center w-full bg-neutral text-primary-content">
+                <div className="card-body ">
+                    <h2 className="text-3xl">My Name: Atiqur Rahman</h2>
                     <p>Email: atiq94.ar@gmail.com</p>
                     <p>Educational background: I have completed my bechelor degree in Law from Uttara University</p>
                     <p>List of Skills: HTML, CSS, BOOTSTRAP, TAILWIND, JAVASCRIPT, REACTJS, NODEJS </p>

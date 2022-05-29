@@ -9,7 +9,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?email=${user.email}`, {
+            fetch(`https://rocky-eyrie-24342.herokuapp.com/order?email=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -23,8 +23,8 @@ const MyOrders = () => {
         <div>
             <h1 className='text-2xl text-center text-sky-300'>My Orders</h1>
 
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
 
                     <thead>
                         <tr>
